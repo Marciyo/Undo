@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TripsViewController" customModule="Undo_Challenge" customModuleProvider="target">
             <connections>
+                <outlet property="headerView" destination="e1r-H0-7FY" id="m7E-TK-8Bi"/>
                 <outlet property="headerViewHeightConstraint" destination="FqR-6c-AGC" id="RlH-ed-nbw"/>
                 <outlet property="tableView" destination="8Y6-i0-1Us" id="PeY-Dm-Jqt"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -27,8 +28,15 @@
                         <constraint firstAttribute="height" constant="350" id="FqR-6c-AGC"/>
                     </constraints>
                 </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y2P-uE-KKM" userLabel="Separator View" customClass="CurvedSeparatorView" customModule="Undo_Challenge" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="394" width="414" height="13"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="13" id="wbt-v3-hCz"/>
+                    </constraints>
+                </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8Y6-i0-1Us">
-                    <rect key="frame" x="0.0" y="406" width="414" height="490"/>
+                    <rect key="frame" x="0.0" y="407" width="414" height="489"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                 </tableView>
             </subviews>
@@ -37,10 +45,13 @@
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="e1r-H0-7FY" secondAttribute="top" id="0xf-Wb-haV"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8Y6-i0-1Us" secondAttribute="trailing" id="7z9-6n-Z0B"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="e1r-H0-7FY" secondAttribute="trailing" id="BbK-OX-G3s"/>
-                <constraint firstItem="8Y6-i0-1Us" firstAttribute="top" secondItem="e1r-H0-7FY" secondAttribute="bottom" constant="12" id="ErY-vO-or4"/>
                 <constraint firstAttribute="bottom" secondItem="8Y6-i0-1Us" secondAttribute="bottom" id="HzS-tM-wcO"/>
+                <constraint firstItem="Y2P-uE-KKM" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="MN9-id-eYW"/>
                 <constraint firstItem="e1r-H0-7FY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="TLt-eQ-Bvx"/>
+                <constraint firstItem="Y2P-uE-KKM" firstAttribute="top" secondItem="e1r-H0-7FY" secondAttribute="bottom" id="U5H-Vv-MpT"/>
                 <constraint firstItem="8Y6-i0-1Us" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Yjt-GK-Per"/>
+                <constraint firstItem="Y2P-uE-KKM" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="rTw-O1-vCn"/>
+                <constraint firstItem="8Y6-i0-1Us" firstAttribute="top" secondItem="Y2P-uE-KKM" secondAttribute="bottom" id="zUS-yI-ZSC"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="137.68115942028987" y="98.4375"/>

@@ -59,10 +59,8 @@ final class TripsHeaderView: UIView {
         tripsStack.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             tripsStack.centerXAnchor.constraint(equalTo: centerXAnchor),
-            tripsStack.topAnchor.constraint(equalTo: centerYAnchor)
+            tripsStack.topAnchor.constraint(equalTo: centerYAnchor, constant: -8)
         ])
-        applyShapeMask()
-
     }
 
     override init(frame: CGRect) {
@@ -91,43 +89,5 @@ final class TripsHeaderView: UIView {
 
     func updateTripCount(to count: Int) {
         tripsCountLabel.text = "\(count)"
-    }
-}
-
-// MARK: - Shape configuration
-extension TripsHeaderView {
-    fileprivate func applyShapeMask() {
-        let path = UIBezierPath()
-
-        let outerRadius: CGFloat = 13
-//        let middleCurveWidth: CGFloat = 34
-
-        let width = frame.width
-        let height = frame.height
-
-        path.move(to: CGPoint(x: 0, y: height))
-
-        path.addArc(withCenter: CGPoint(x: outerRadius, y: height),
-                    radius: outerRadius,
-                    startAngle: CGFloat(180.0).toRadians(),
-                    endAngle: CGFloat(270.0).toRadians(),
-                    clockwise: true)
-
-//        path.addLine(to: CGPoint(x: 0.0, y: height))
-
-        path.addArc(withCenter: CGPoint(x: width - outerRadius, y: height),
-                    radius: outerRadius,
-                    startAngle: CGFloat(270.0).toRadians(),
-                    endAngle: CGFloat(0.0).toRadians(),
-                    clockwise: true)
-
-        path.close()
-
-        let shapeLayer = CAShapeLayer()
-        shapeLayer.path = path.cgPath
-
-        shapeLayer.fillColor = UIColor.systemBackground.cgColor
-
-        layer.addSublayer(shapeLayer)
     }
 }

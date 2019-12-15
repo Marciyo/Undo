@@ -24,7 +24,7 @@ final class TripsViewModel {
         let countriesVisited = trip.tripLogEntries.map { $0.countryCode }
         let firstVisitedCountry = countryName(for: countriesVisited.first!)
         let firstCountryEmoji = countryEmoji(for: countriesVisited.first!)
-        let countryString = firstVisitedCountry ?? "Unknown" + " " + firstCountryEmoji
+        let countryString = firstVisitedCountry! + " " + firstCountryEmoji
 
         let startDate = Date.getFormattedDate(from: trip.startDate)
         let endDate = Date.getFormattedDate(from: trip.endDate)
@@ -32,7 +32,7 @@ final class TripsViewModel {
 
         let durationString = calculateDurationString(between: startDate, and: endDate)
 
-        let priceString = "\(trip.currentTotalPrice / 100) kr >"
+        let priceString = "\(trip.currentTotalPrice / 100) kr"
 
         return TripCellData(country: countryString,
                             dates: datesString,
@@ -55,7 +55,7 @@ final class TripsViewModel {
         } else if let seconds = durationComponents.second, seconds != 0 {
             return seconds == 1 ? "1 second" : "\(seconds) seconds"
         } else {
-            return "Unknown"
+            return "Less than 1 second"
         }
     }
 
