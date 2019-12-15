@@ -24,6 +24,7 @@
 		9A52BFA023A67072003B74F0 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A52BF9F23A67072003B74F0 /* Coordinator.swift */; };
 		9A52BFA223A674E9003B74F0 /* Extensions+Other.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A52BFA123A674E9003B74F0 /* Extensions+Other.swift */; };
 		9A52BFA523A6B262003B74F0 /* CurvedSeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A52BFA423A6B262003B74F0 /* CurvedSeparatorView.swift */; };
+		9A52BFAB23A6BC31003B74F0 /* TripDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A52BFAA23A6BC31003B74F0 /* TripDetailsViewModel.swift */; };
 		9AFDEE6A23A4F93F003873A5 /* TripsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFDEE6923A4F93F003873A5 /* TripsHeaderView.swift */; };
 		9AFDEE6C23A64A2F003873A5 /* Extensions+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFDEE6B23A64A2F003873A5 /* Extensions+Date.swift */; };
 		9AFDEE7C23A64C09003873A5 /* TripsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFDEE7B23A64C09003873A5 /* TripsViewModelTests.swift */; };
@@ -61,6 +62,7 @@
 		9A52BF9F23A67072003B74F0 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		9A52BFA123A674E9003B74F0 /* Extensions+Other.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+Other.swift"; sourceTree = "<group>"; };
 		9A52BFA423A6B262003B74F0 /* CurvedSeparatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvedSeparatorView.swift; sourceTree = "<group>"; };
+		9A52BFAA23A6BC31003B74F0 /* TripDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailsViewModel.swift; sourceTree = "<group>"; };
 		9AFDEE6923A4F93F003873A5 /* TripsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsHeaderView.swift; sourceTree = "<group>"; };
 		9AFDEE6B23A64A2F003873A5 /* Extensions+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+Date.swift"; sourceTree = "<group>"; };
 		9AFDEE7123A64B66003873A5 /* Undo ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Undo ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -109,13 +111,12 @@
 		9A303CB923A25E9A0072E061 /* Undo Challenge */ = {
 			isa = PBXGroup;
 			children = (
+				9A52BFA923A6BB5B003B74F0 /* Data */,
 				9A52BF9C23A66972003B74F0 /* Navigation */,
 				9A303CE023A25F110072E061 /* Views */,
 				9A303CD723A25EFA0072E061 /* Traits */,
-				9A303CC323A25E9F0072E061 /* Assets.xcassets */,
-				9A303CDE23A25F070072E061 /* data.json */,
-				9A303CC523A25E9F0072E061 /* LaunchScreen.storyboard */,
 				9A303CC823A25E9F0072E061 /* Info.plist */,
+				9A303CC523A25E9F0072E061 /* LaunchScreen.storyboard */,
 			);
 			path = "Undo Challenge";
 			sourceTree = "<group>";
@@ -135,7 +136,6 @@
 				9A303CD823A25EFA0072E061 /* Extensions+UITableView.swift */,
 				9AFDEE6B23A64A2F003873A5 /* Extensions+Date.swift */,
 				9A52BFA123A674E9003B74F0 /* Extensions+Other.swift */,
-				9A303CD923A25EFA0072E061 /* Models.swift */,
 				9A303CDA23A25EFA0072E061 /* NibReusableView.swift */,
 				9A52BF9F23A67072003B74F0 /* Coordinator.swift */,
 			);
@@ -182,6 +182,16 @@
 			path = TripsHeader;
 			sourceTree = "<group>";
 		};
+		9A52BFA923A6BB5B003B74F0 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				9A303CD923A25EFA0072E061 /* Models.swift */,
+				9A303CDE23A25F070072E061 /* data.json */,
+				9A303CC323A25E9F0072E061 /* Assets.xcassets */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		9AFDEE7223A64B66003873A5 /* Undo ChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
@@ -196,6 +206,7 @@
 			children = (
 				9AFDEE7E23A65E48003873A5 /* TripDetailsViewController.swift */,
 				9AFDEE7F23A65E48003873A5 /* TripDetailsViewController.xib */,
+				9A52BFAA23A6BC31003B74F0 /* TripDetailsViewModel.swift */,
 			);
 			path = TripDetails;
 			sourceTree = "<group>";
@@ -310,6 +321,7 @@
 				9A303CD623A25EF40072E061 /* TripTableViewCell.swift in Sources */,
 				9A303CDC23A25EFA0072E061 /* Models.swift in Sources */,
 				9AFDEE6C23A64A2F003873A5 /* Extensions+Date.swift in Sources */,
+				9A52BFAB23A6BC31003B74F0 /* TripDetailsViewModel.swift in Sources */,
 				9A303CCF23A25EE60072E061 /* TripsViewModel.swift in Sources */,
 				9A52BFA523A6B262003B74F0 /* CurvedSeparatorView.swift in Sources */,
 				9AFDEE6A23A4F93F003873A5 /* TripsHeaderView.swift in Sources */,

@@ -15,14 +15,23 @@ final class TripsViewController: UIViewController {
     @IBOutlet private weak var tableView: UITableView!
     private let impactGenerator = UIImpactFeedbackGenerator(style: .medium)
 
-    private let viewModel = TripsViewModel()
+    private let viewModel: TripsViewModel
     weak var delegate: TripListDelegate?
+
+    init(viewModel: TripsViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTableView()
         headerView.updateTripCount(to: viewModel.trips.count)
         impactGenerator.prepare()
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
 }
 

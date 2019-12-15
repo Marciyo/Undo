@@ -24,16 +24,18 @@ final class AppCoordinator: Coordinator {
     }
 
     func start() {
-        let tripsVC = TripsViewController()
-        tripsVC.delegate = self
-        window.rootViewController = tripsVC
+        let tripsViewModel = TripsViewModel()
+        let tripsViewController = TripsViewController(viewModel: tripsViewModel)
+        tripsViewController.delegate = self
+        window.rootViewController = tripsViewController
     }
 }
 
 
 extension AppCoordinator: TripListDelegate {
     func showTripDetails(for trip: Trip) {
-        let tripDetails = TripDetailsViewController()
+        let tripDetailsViewModel = TripDetailsViewModel(trip: trip)
+        let tripDetails = TripDetailsViewController(viewModel: tripDetailsViewModel)
         tripDetails.delegate = self
         tripDetails.modalPresentationStyle = .pageSheet
         window.rootViewController?.present(tripDetails, animated: true)

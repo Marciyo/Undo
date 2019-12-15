@@ -18,8 +18,23 @@ final class TripDetailsViewController: UIViewController {
     }
 
     @IBOutlet private weak var container: UIView!
-    private let impactGenerator = UIImpactFeedbackGenerator(style: .soft)
+    @IBOutlet private weak var totalPriceLabel: UILabel!
+    @IBOutlet private weak var countryLabel: UILabel!
+    @IBOutlet private weak var pricePerDayLabel: UILabel!
+    @IBOutlet private weak var durationLabel: UILabel!
+    @IBOutlet private weak var coversStack: UIStackView!
+    @IBOutlet private weak var firstCoverageLabel: UILabel!
+    @IBOutlet private weak var coveragesStack: UIStackView!
+
+    private let viewModel: TripDetailsViewModel
     weak var delegate: TripListDelegate?
+
+    private let impactGenerator = UIImpactFeedbackGenerator(style: .soft)
+
+    init(viewModel: TripDetailsViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -30,6 +45,35 @@ final class TripDetailsViewController: UIViewController {
         super.viewDidLoad()
         view.backgroundColor = UIColor.black.withAlphaComponent(0.3)
         impactGenerator.prepare()
+        setupData()
+    }
+
+    // Change to bidings
+    private func setupData() {
+        totalPriceLabel.text = viewModel.totalPrice
+        countryLabel.text = viewModel.countryName
+        pricePerDayLabel.text = viewModel.pricePerDay
+        durationLabel.text = viewModel.duration
+        firstCoverageLabel.text = viewModel.coverages.first
+
+        viewModel.coInsured.forEach { (firstName) in
+            let coInsuredLabel = UILabel()
+            coInsuredLabel.text = firstName
+            coInsuredLabel.font = .systemFont(ofSize: 12)
+            coInsuredLabel.textColor = .secondaryLabel
+            coversStack.addArrangedSubview(coInsuredLabel)
+        }
+
+        if !viewModel.coverages.isEmpty {
+            viewModel.coverages.removeFirst()
+            viewModel.coverages.forEach { (firstName) in
+                let coverageLabel = UILabel()
+                coverageLabel.text = firstName
+                coverageLabel.font = .systemFont(ofSize: 12)
+                coverageLabel.textColor = .secondaryLabel
+                coveragesStack.addArrangedSubview(coverageLabel)
+            }
+        }
     }
 
     override func viewDidLayoutSubviews() {
@@ -40,8 +84,13 @@ final class TripDetailsViewController: UIViewController {
         impactGenerator.impactOccurred()
         delegate?.dismissPopup()
     }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 }
 
+// MARK: - Cutout shape calculations
 extension TripDetailsViewController {
     fileprivate func applyCutoutShapeMask(for view: UIView) {
         let path = UIBezierPath()

@@ -11,6 +11,13 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TripDetailsViewController" customModule="Undo_Challenge" customModuleProvider="target">
             <connections>
                 <outlet property="container" destination="EZL-GK-13P" id="6PC-XL-IWZ"/>
+                <outlet property="countryLabel" destination="Rcr-He-fea" id="9E0-NC-3ZM"/>
+                <outlet property="coveragesStack" destination="r0m-Bp-PkR" id="yV0-wl-zxy"/>
+                <outlet property="coversStack" destination="ycp-bS-u62" id="ye0-rr-aNf"/>
+                <outlet property="durationLabel" destination="AhK-CJ-C4J" id="O9k-WZ-mQH"/>
+                <outlet property="firstCoverageLabel" destination="LlS-k1-BCZ" id="ivD-77-FBq"/>
+                <outlet property="pricePerDayLabel" destination="VMG-sB-DFx" id="TIp-IV-MvC"/>
+                <outlet property="totalPriceLabel" destination="7Ei-Ut-Ied" id="SKS-g3-2Tt"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -47,7 +54,7 @@
                                         <constraint firstAttribute="height" constant="12" id="YqU-P2-EId"/>
                                     </constraints>
                                 </view>
-                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ycp-bS-u62" userLabel="Covers Stack View">
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="ycp-bS-u62" userLabel="Covers Stack View">
                                     <rect key="frame" x="0.0" y="215" width="286" height="14.5"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bu7-RL-Qem">
@@ -68,6 +75,9 @@
                                             </subviews>
                                         </stackView>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Bu7-RL-Qem" firstAttribute="width" secondItem="ycp-bS-u62" secondAttribute="width" id="kkp-R9-Wqe"/>
+                                    </constraints>
                                 </stackView>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Pc-oI-aZm" userLabel="Separator">
                                     <rect key="frame" x="0.0" y="245.5" width="286" height="1"/>
@@ -77,7 +87,7 @@
                                     </constraints>
                                     <viewLayoutGuide key="safeArea" id="hsB-5N-U46"/>
                                 </view>
-                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="r0m-Bp-PkR" userLabel="Coverages Stack View">
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="r0m-Bp-PkR" userLabel="Coverages Stack View">
                                     <rect key="frame" x="0.0" y="262.5" width="286" height="14.5"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ukv-fo-Nzc">
@@ -98,6 +108,9 @@
                                             </subviews>
                                         </stackView>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="ukv-fo-Nzc" firstAttribute="width" secondItem="r0m-Bp-PkR" secondAttribute="width" id="LKZ-ww-tfx"/>
+                                    </constraints>
                                 </stackView>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7G4-Fc-jus" userLabel="Separator">
                                     <rect key="frame" x="0.0" y="293" width="286" height="1"/>

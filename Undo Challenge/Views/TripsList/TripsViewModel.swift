@@ -30,7 +30,7 @@ final class TripsViewModel {
         let endDate = Date.getFormattedDate(from: trip.endDate)
         let datesString = "\(startDate.prettyDate()) - \(endDate.prettyDate())"
 
-        let durationString = calculateDurationString(between: startDate, and: endDate)
+        let durationString = prepareDurationString(between: startDate, and: endDate)
 
         let priceString = "\(trip.currentTotalPrice / 100) kr"
 
@@ -40,7 +40,7 @@ final class TripsViewModel {
                             price: priceString)
     }
 
-    private func calculateDurationString(between date1: Date, and date2: Date) -> String {
+    private func prepareDurationString(between date1: Date, and date2: Date) -> String {
         let unitFlags = Set<Calendar.Component>([.day, .hour, .minute, .second])
         let durationComponents = Calendar.current.dateComponents(unitFlags,
                                                                  from: date1,
