@@ -1,0 +1,696 @@
+[
+    {
+        "id": "06903675-7255-4cbe-b248-3907dfb820fe",
+        "startDate": "2019-09-09T18:35:17.169+02:00",
+        "endDate": "2019-09-14T17:55:00.746+02:00",
+        "currentTotalPrice": 7800,
+        "tripLogEntries": [
+            {
+                "countryCode": "ES",
+                "daysInCountry": 6
+            }
+        ],
+        "coInsured": [],
+        "coverages": [
+            {
+                "titleLocalizationKey": "product_title_travel_sickness"
+            },
+            {
+                "titleLocalizationKey": "product_title_travel_luggage"
+            }
+        ]
+    },
+    {
+        "id": "c393c755-7dd6-4f97-9e55-10f4a7b3f208",
+        "startDate": "2019-05-10T18:38:54.000+02:00",
+        "endDate": "2019-05-13T10:34:34.000+02:00",
+        "currentTotalPrice": 6600,
+        "tripLogEntries": [
+            {
+                "countryCode": "US",
+                "daysInCountry": 2
+            },
+            {
+                "countryCode": "CH",
+                "daysInCountry": 2
+            }
+        ],
+        "coInsured": [],
+        "coverages": [
+            {
+                "titleLocalizationKey": "product_title_travel_sickness"
+            },
+            {
+                "titleLocalizationKey": "product_title_travel_luggage"
+            }
+        ]
+    },
+    {
+        "id": "497f97b3-260f-4332-bc7d-ed2014841b76",
+        "startDate": "2019-08-01T09:34:00.087+02:00",
+        "endDate": "2019-08-06T13:45:03.657+02:00",
+        "currentTotalPrice": 12000,
+        "tripLogEntries": [
+            {
+                "countryCode": "US",
+                "daysInCountry": 6
+            }
+        ],
+        "coInsured": [],
+        "coverages": [
+            {
+                "titleLocalizationKey": "product_title_travel_sickness"
+            },
+            {
+                "titleLocalizationKey": "product_title_travel_luggage"
+            }
+        ]
+    },
+    {
+        "id": "9cea378a-f7ee-448c-82cb-d20da5dc98b8",
+        "startDate": "2019-05-29T12:13:00.000+02:00",
+        "endDate": "2019-06-12T08:53:39.000+02:00",
+        "currentTotalPrice": 19500,
+        "tripLogEntries": [
+            {
+                "countryCode": "GR",
+                "daysInCountry": 15
+            }
+        ],
+        "coInsured": [],
+        "coverages": [
+            {
+                "titleLocalizationKey": "product_title_travel_luggage"
+            },
+            {
+                "titleLocalizationKey": "product_title_travel_sickness"
+            }
+        ]
+    },
+    {
+        "id": "41eea50c-649f-4398-a656-fe2e8488f3b1",
+        "startDate": "2019-05-20T15:12:12.000+02:00",
+        "endDate": "2019-05-21T11:40:49.000+02:00",
+        "currentTotalPrice": 14698,
+        "tripLogEntries": [
+            {
+                "countryCode": "FR",
+                "daysInCountry": 2
+            }
+        ],
+        "coInsured": [
+            {
+                "id": "0380a83e-cbc0-4455-8652-4acc69c636cd",
+                "firstNames": "David Taylor",
+                "lastName": null
+            },
+            {
+                "id": "ff311f21-7ce3-4210-a8c0-9a7ea58e246e",
+                "firstNames": "Samwell Tarly",
+                "lastName": null
+            },
+            {
+                "id": "f8fcebde-3a97-43a0-86de-6048ecb12a3f",
+                "firstNames": "Daenerys Targaryen",
+                "lastName": null
+            },
+            {
+                "id": "06e011d5-1be1-4db0-981b-16835de36405",
+                "firstNames": "Tilde Wendel 22",
+                "lastName": null
+            },
+            {
+                "id": "c36dd46f-638e-485d-a4a8-783897ab90dd",
+                "firstNames": "Aegon Targaryen ",
+                "lastName": null
+            },
+            {
+                "id": "d68de4fa-e958-404c-bc70-18e82d424444",
+                "firstNames": "Felix",
+                "lastName": null
+            },
+            {
+                "id": "646bbe2a-bba3-4e0f-bdfd-a5415b886041",
+                "firstNames": "Son of Aegon",
+                "lastName": null
+            },
+            {
+                "id": "e3d84749-ba06-4126-9117-df20d3cd3b68",
+                "firstNames": "Blood Raven",
+                "lastName": null
+            }
+        ],
+        "coverages": [
+            {
+                "titleLocalizationKey": "product_title_travel_sickness"
+            },
+            {
+                "titleLocalizationKey": "product_title_travel_luggage"
+            }
+        ]
+    },
+    {
+        "id": "dc3df19a-b111-4401-81ca-3031e12357e6",
+        "startDate": "2019-05-06T18:34:00.000+02:00",
+        "endDate": "2019-05-10T18:35:43.000+02:00",
+        "currentTotalPrice": 10000,
+        "tripLogEntries": [
+            {
+                "countryCode": "US",
+                "daysInCountry": 5
+            }
+        ],
+        "coInsured": [],
+        "coverages": [
+            {
+                "titleLocalizationKey": "product_title_travel_sickness"
+            },
+            {
+                "titleLocalizationKey": "product_title_travel_luggage"
+            }
+        ]
+    },
+    {
+        "id": "b5a2812c-8908-4af2-9216-418920ee3cff",
+        "startDate": "2019-05-06T13:20:42.000+02:00",
+        "endDate": "2019-05-06T13:20:42.000+02:00",
+        "currentTotalPrice": 518000,
+        "tripLogEntries": [
+            {
+                "countryCode": "RU",
+                "daysInCountry": 148
+            }
+        ],
+        "coInsured": [],
+        "coverages": [
+            {
+                "titleLocalizationKey": "product_title_travel_rental_downpayment"
+            },
+            {
+                "titleLocalizationKey": "product_title_travel_luggage"
+            },
+            {
+                "titleLocalizationKey": "product_title_travel_sickness"
+            }
+        ]
+    },
+    {
+        "id": "0519efd9-8bd0-4543-8c39-8fefa5c2dd69",
+        "startDate": "2019-05-01T11:44:41.000+02:00",
+        "endDate": "2019-05-03T11:06:02.000+02:00",
+        "currentTotalPrice": 7400,
+        "tripLogEntries": [
+            {
+                "countryCode": "FR",
+                "daysInCountry": 1
+            },
+            {
+                "countryCode": "US",
+                "daysInCountry": 1
+            },
+            {
+                "countryCode": "FR",
+                "daysInCountry": 1
+            }
+        ],
+        "coInsured": [],
+        "coverages": [
+            {
+                "titleLocalizationKey": "product_title_travel_luggage"
+            },
+            {
+                "titleLocalizationKey": "product_title_travel_sickness"
+            }
+        ]
+    },
+    {
+        "id": "cb51451c-e2a1-4b41-acd6-14c600025b8f",
+        "startDate": "2019-04-10T19:49:00.000+02:00",
+        "endDate": "2019-04-15T19:49:00.000+02:00",
+        "currentTotalPrice": 10800,
+        "tripLogEntries": [
+            {
+                "countryCode": "US",
+                "daysInCountry": 2
+            },
+            {
+                "countryCode": "ZM",
+                "daysInCountry": 2
+            },
+            {
+                "countryCode": "IN",
+                "daysInCountry": 2
+            }
+        ],
+        "coInsured": [],
+        "coverages": [
+            {
+                "titleLocalizationKey": "product_title_travel_luggage"
+            },
+            {
+                "titleLocalizationKey": "product_title_travel_sickness"
+            }
+        ]
+    },
+    {
+        "id": "83b5942b-5d07-4224-9528-0a5f20583f57",
+        "startDate": "2019-03-19T06:45:04.000+01:00",
+        "endDate": "2019-03-21T14:36:22.000+01:00",
+        "currentTotalPrice": 3900,
+        "tripLogEntries": [
+            {
+                "countryCode": "FR",
+                "daysInCountry": 3
+            }
+        ],
+        "coInsured": [],
+        "coverages": [
+            {
+                "titleLocalizationKey": "product_title_travel_sickness"
+            },
+            {
+                "titleLocalizationKey": "product_title_travel_luggage"
+            }
+        ]
+    },
+    {
+        "id": "1f509a58-e029-4ac6-bab7-3c3681c3c973",
+        "startDate": "2019-03-18T15:48:43.000+01:00",
+        "endDate": "2019-03-18T15:56:09.000+01:00",
+        "currentTotalPrice": 334900,
+        "tripLogEntries": [
+            {
+                "countryCode": "IN",
+                "daysInCountry": 197
+            }
+        ],
+        "coInsured": [],
+        "coverages": [
+            {
+                "titleLocalizationKey": "product_title_travel_sickness"
+            },
+            {
+                "titleLocalizationKey": "product_title_travel_luggage"
+            }
+        ]
+    },
+    {
+        "id": "21fb1278-6844-49a1-a268-7b1e7874aa67",
+        "startDate": "2019-01-28T14:33:16.225+01:00",
+        "endDate": "2019-01-28T16:06:25.868+01:00",
+        "currentTotalPrice": 2117,
+        "tripLogEntries": [
+            {
+                "countryCode": "IT",
+                "daysInCountry": 1
+            }
+        ],
+        "coInsured": [],
+        "coverages": [
+            {
+                "titleLocalizationKey": "product_title_travel_sickness"
+            },
+            {
+                "titleLocalizationKey": "product_title_travel_luggage"
+            }
+        ]
+    },
+    {
+        "id": "b7d88cb2-1783-41e6-94e4-62492540df1d",
+        "startDate": "2019-01-28T13:38:20.587+01:00",
+        "endDate": "2019-01-28T14:31:37.965+01:00",
+        "currentTotalPrice": 2117,
+        "tripLogEntries": [
+            {
+                "countryCode": "IT",
+                "daysInCountry": 1
+            }
+        ],
+        "coInsured": [],
+        "coverages": [
+            {
+                "titleLocalizationKey": "product_title_travel_sickness"
+            },
+            {
+                "titleLocalizationKey": "product_title_travel_luggage"
+            }
+        ]
+    },
+    {
+        "id": "ea8ca09d-2575-4255-94fa-5214d696319a",
+        "startDate": "2019-01-28T13:00:27.968+01:00",
+        "endDate": "2019-01-28T13:38:08.854+01:00",
+        "currentTotalPrice": 2117,
+        "tripLogEntries": [
+            {
+                "countryCode": "IT",
+                "daysInCountry": 1
+            }
+        ],
+        "coInsured": [],
+        "coverages": [
+            {
+                "titleLocalizationKey": "product_title_travel_sickness"
+            },
+            {
+                "titleLocalizationKey": "product_title_travel_luggage"
+            }
+        ]
+    },
+    {
+        "id": "7c0ea6ab-9d22-4377-8cc4-edd06560285b",
+        "startDate": "2019-01-28T12:57:08.823+01:00",
+        "endDate": "2019-01-28T13:00:27.786+01:00",
+        "currentTotalPrice": 2117,
+        "tripLogEntries": [
+            {
+                "countryCode": "SE",
+                "daysInCountry": 1
+            }
+        ],
+        "coInsured": [],
+        "coverages": [
+            {
+                "titleLocalizationKey": "product_title_travel_sickness"
+            },
+            {
+                "titleLocalizationKey": "product_title_travel_luggage"
+            }
+        ]
+    },
+    {
+        "id": "554ad780-da2f-4f9c-9d9d-ed09778e64e2",
+        "startDate": "2019-01-28T11:44:34.047+01:00",
+        "endDate": "2019-01-28T12:56:57.352+01:00",
+        "currentTotalPrice": 1795,
+        "tripLogEntries": [
+            {
+                "countryCode": "SE",
+                "daysInCountry": 1
+            }
+        ],
+        "coInsured": [],
+        "coverages": [
+            {
+                "titleLocalizationKey": "product_title_travel_sickness"
+            },
+            {
+                "titleLocalizationKey": "product_title_travel_luggage"
+            }
+        ]
+    },
+    {
+        "id": "52388239-9fb8-4dba-934e-85a632736d07",
+        "startDate": "2019-01-28T11:37:07.307+01:00",
+        "endDate": "2019-01-28T11:44:22.272+01:00",
+        "currentTotalPrice": 1795,
+        "tripLogEntries": [
+            {
+                "countryCode": "SE",
+                "daysInCountry": 1
+            }
+        ],
+        "coInsured": [],
+        "coverages": [
+            {
+                "titleLocalizationKey": "product_title_travel_sickness"
+            },
+            {
+                "titleLocalizationKey": "product_title_travel_luggage"
+            }
+        ]
+    },
+    {
+        "id": "af4c6544-77e4-4f0f-8ab3-025c2615a20d",
+        "startDate": "2019-01-25T11:31:56.199+01:00",
+        "endDate": "2019-01-28T11:36:25.254+01:00",
+        "currentTotalPrice": 7180,
+        "tripLogEntries": [
+            {
+                "countryCode": "JP",
+                "daysInCountry": 4
+            }
+        ],
+        "coInsured": [],
+        "coverages": [
+            {
+                "titleLocalizationKey": "product_title_travel_sickness"
+            },
+            {
+                "titleLocalizationKey": "product_title_travel_luggage"
+            }
+        ]
+    },
+    {
+        "id": "239c1be7-44ab-4b92-995f-8315966c13c8",
+        "startDate": "2019-01-24T14:09:14.567+01:00",
+        "endDate": "2019-01-24T14:25:49.129+01:00",
+        "currentTotalPrice": 1795,
+        "tripLogEntries": [
+            {
+                "countryCode": "IT",
+                "daysInCountry": 1
+            }
+        ],
+        "coInsured": [],
+        "coverages": [
+            {
+                "titleLocalizationKey": "product_title_travel_sickness"
+            },
+            {
+                "titleLocalizationKey": "product_title_travel_luggage"
+            }
+        ]
+    },
+    {
+        "id": "2856c3e4-0240-46a0-85f5-cf88c7826faf",
+        "startDate": "2019-01-24T14:08:19.591+01:00",
+        "endDate": "2019-01-24T14:08:58.607+01:00",
+        "currentTotalPrice": 3220,
+        "tripLogEntries": [
+            {
+                "countryCode": "US",
+                "daysInCountry": 1
+            }
+        ],
+        "coInsured": [],
+        "coverages": [
+            {
+                "titleLocalizationKey": "product_title_travel_sickness"
+            },
+            {
+                "titleLocalizationKey": "product_title_travel_luggage"
+            }
+        ]
+    },
+    {
+        "id": "c603bb49-2e3d-4735-8644-41574bcb2644",
+        "startDate": "2019-01-24T14:02:59.979+01:00",
+        "endDate": "2019-01-24T14:08:07.747+01:00",
+        "currentTotalPrice": 1795,
+        "tripLogEntries": [
+            {
+                "countryCode": "IT",
+                "daysInCountry": 1
+            }
+        ],
+        "coInsured": [],
+        "coverages": [
+            {
+                "titleLocalizationKey": "product_title_travel_sickness"
+            },
+            {
+                "titleLocalizationKey": "product_title_travel_luggage"
+            }
+        ]
+    },
+    {
+        "id": "3afe347b-d096-4686-9be2-6379c0669a36",
+        "startDate": "2019-01-24T14:01:30.218+01:00",
+        "endDate": "2019-01-24T14:02:53.015+01:00",
+        "currentTotalPrice": 3220,
+        "tripLogEntries": [
+            {
+                "countryCode": "US",
+                "daysInCountry": 1
+            }
+        ],
+        "coInsured": [],
+        "coverages": [
+            {
+                "titleLocalizationKey": "product_title_travel_sickness"
+            },
+            {
+                "titleLocalizationKey": "product_title_travel_luggage"
+            }
+        ]
+    },
+    {
+        "id": "c937cd5f-198d-46d7-9ad2-c85d1ef75af0",
+        "startDate": "2019-01-24T13:57:59.888+01:00",
+        "endDate": "2019-01-24T14:01:23.385+01:00",
+        "currentTotalPrice": 1795,
+        "tripLogEntries": [
+            {
+                "countryCode": "SE",
+                "daysInCountry": 1
+            }
+        ],
+        "coInsured": [],
+        "coverages": [
+            {
+                "titleLocalizationKey": "product_title_travel_sickness"
+            },
+            {
+                "titleLocalizationKey": "product_title_travel_luggage"
+            }
+        ]
+    },
+    {
+        "id": "d93f7d6c-af44-43ad-8861-55c11386446a",
+        "startDate": "2019-01-24T13:57:25.881+01:00",
+        "endDate": "2019-01-24T13:57:52.988+01:00",
+        "currentTotalPrice": 3220,
+        "tripLogEntries": [
+            {
+                "countryCode": "US",
+                "daysInCountry": 1
+            }
+        ],
+        "coInsured": [],
+        "coverages": [
+            {
+                "titleLocalizationKey": "product_title_travel_sickness"
+            },
+            {
+                "titleLocalizationKey": "product_title_travel_luggage"
+            }
+        ]
+    },
+    {
+        "id": "202f8577-806b-47df-877d-d44f4e1ef8fa",
+        "startDate": "2019-01-24T13:55:32.598+01:00",
+        "endDate": "2019-01-24T13:57:19.112+01:00",
+        "currentTotalPrice": 3220,
+        "tripLogEntries": [
+            {
+                "countryCode": "US",
+                "daysInCountry": 1
+            }
+        ],
+        "coInsured": [],
+        "coverages": [
+            {
+                "titleLocalizationKey": "product_title_travel_sickness"
+            },
+            {
+                "titleLocalizationKey": "product_title_travel_luggage"
+            }
+        ]
+    },
+    {
+        "id": "fc8ee228-324a-48f1-99f6-5cfb8b9d21cc",
+        "startDate": "2019-01-24T13:54:55.926+01:00",
+        "endDate": "2019-01-24T13:55:25.603+01:00",
+        "currentTotalPrice": 3220,
+        "tripLogEntries": [
+            {
+                "countryCode": "US",
+                "daysInCountry": 1
+            }
+        ],
+        "coInsured": [],
+        "coverages": [
+            {
+                "titleLocalizationKey": "product_title_travel_sickness"
+            },
+            {
+                "titleLocalizationKey": "product_title_travel_luggage"
+            }
+        ]
+    },
+    {
+        "id": "c4c108b5-3533-4412-8f7c-ecc47698ba85",
+        "startDate": "2019-01-24T13:46:27.143+01:00",
+        "endDate": "2019-01-24T13:54:36.285+01:00",
+        "currentTotalPrice": 3220,
+        "tripLogEntries": [
+            {
+                "countryCode": "US",
+                "daysInCountry": 1
+            }
+        ],
+        "coInsured": [],
+        "coverages": [
+            {
+                "titleLocalizationKey": "product_title_travel_sickness"
+            },
+            {
+                "titleLocalizationKey": "product_title_travel_luggage"
+            }
+        ]
+    },
+    {
+        "id": "944b88c6-c5d1-4e90-b980-dd98efac57e4",
+        "startDate": "2019-01-24T13:44:49.729+01:00",
+        "endDate": "2019-01-24T13:45:05.993+01:00",
+        "currentTotalPrice": 3220,
+        "tripLogEntries": [
+            {
+                "countryCode": "US",
+                "daysInCountry": 1
+            }
+        ],
+        "coInsured": [],
+        "coverages": [
+            {
+                "titleLocalizationKey": "product_title_travel_sickness"
+            },
+            {
+                "titleLocalizationKey": "product_title_travel_luggage"
+            }
+        ]
+    },
+    {
+        "id": "f7a465dc-8b20-42be-b62c-4ec0cc5027fb",
+        "startDate": "2019-01-24T13:31:39.458+01:00",
+        "endDate": "2019-01-24T13:37:32.059+01:00",
+        "currentTotalPrice": 1795,
+        "tripLogEntries": [
+            {
+                "countryCode": "SE",
+                "daysInCountry": 1
+            }
+        ],
+        "coInsured": [],
+        "coverages": [
+            {
+                "titleLocalizationKey": "product_title_travel_sickness"
+            },
+            {
+                "titleLocalizationKey": "product_title_travel_luggage"
+            }
+        ]
+    },
+    {
+        "id": "6aa25a92-3277-4f53-ab94-7385d69c3141",
+        "startDate": "2019-01-24T13:30:23.936+01:00",
+        "endDate": "2019-01-24T13:31:32.476+01:00",
+        "currentTotalPrice": 1795,
+        "tripLogEntries": [
+            {
+                "countryCode": "SE",
+                "daysInCountry": 1
+            }
+        ],
+        "coInsured": [],
+        "coverages": [
+            {
+                "titleLocalizationKey": "product_title_travel_sickness"
+            },
+            {
+                "titleLocalizationKey": "product_title_travel_luggage"
+            }
+        ]
+    }
+]

@@ -9,25 +9,76 @@
 /* Begin PBXBuildFile section */
 		9A303CBB23A25E9A0072E061 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A303CBA23A25E9A0072E061 /* AppDelegate.swift */; };
 		9A303CBD23A25E9A0072E061 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A303CBC23A25E9A0072E061 /* SceneDelegate.swift */; };
-		9A303CBF23A25E9A0072E061 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A303CBE23A25E9A0072E061 /* ViewController.swift */; };
-		9A303CC223A25E9A0072E061 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A303CC023A25E9A0072E061 /* Main.storyboard */; };
 		9A303CC423A25E9F0072E061 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A303CC323A25E9F0072E061 /* Assets.xcassets */; };
 		9A303CC723A25E9F0072E061 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A303CC523A25E9F0072E061 /* LaunchScreen.storyboard */; };
+		9A303CCF23A25EE60072E061 /* TripsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A303CCE23A25EE60072E061 /* TripsViewModel.swift */; };
+		9A303CD523A25EF40072E061 /* TripTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A303CD323A25EF40072E061 /* TripTableViewCell.xib */; };
+		9A303CD623A25EF40072E061 /* TripTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A303CD423A25EF40072E061 /* TripTableViewCell.swift */; };
+		9A303CDB23A25EFA0072E061 /* Extensions+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A303CD823A25EFA0072E061 /* Extensions+UITableView.swift */; };
+		9A303CDC23A25EFA0072E061 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A303CD923A25EFA0072E061 /* Models.swift */; };
+		9A303CDD23A25EFA0072E061 /* NibReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A303CDA23A25EFA0072E061 /* NibReusableView.swift */; };
+		9A303CDF23A25F070072E061 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 9A303CDE23A25F070072E061 /* data.json */; };
+		9A303CE423A26CEA0072E061 /* TripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A303CE223A26CEA0072E061 /* TripsViewController.swift */; };
+		9A303CE523A26CEA0072E061 /* TripsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A303CE323A26CEA0072E061 /* TripsViewController.xib */; };
+		9A52BF9E23A66995003B74F0 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A52BF9D23A66995003B74F0 /* AppCoordinator.swift */; };
+		9A52BFA023A67072003B74F0 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A52BF9F23A67072003B74F0 /* Coordinator.swift */; };
+		9A52BFA223A674E9003B74F0 /* Extensions+Other.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A52BFA123A674E9003B74F0 /* Extensions+Other.swift */; };
+		9A52BFA523A6B262003B74F0 /* CurvedSeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A52BFA423A6B262003B74F0 /* CurvedSeparatorView.swift */; };
+		9AFDEE6A23A4F93F003873A5 /* TripsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFDEE6923A4F93F003873A5 /* TripsHeaderView.swift */; };
+		9AFDEE6C23A64A2F003873A5 /* Extensions+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFDEE6B23A64A2F003873A5 /* Extensions+Date.swift */; };
+		9AFDEE7C23A64C09003873A5 /* TripsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFDEE7B23A64C09003873A5 /* TripsViewModelTests.swift */; };
+		9AFDEE8023A65E48003873A5 /* TripDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFDEE7E23A65E48003873A5 /* TripDetailsViewController.swift */; };
+		9AFDEE8123A65E48003873A5 /* TripDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9AFDEE7F23A65E48003873A5 /* TripDetailsViewController.xib */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9AFDEE7623A64B66003873A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A303CAF23A25E990072E061 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A303CB623A25E9A0072E061;
+			remoteInfo = "Undo Challenge";
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		9A303CB723A25E9A0072E061 /* Undo Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Undo Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A303CBA23A25E9A0072E061 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A303CBC23A25E9A0072E061 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9A303CBE23A25E9A0072E061 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9A303CC123A25E9A0072E061 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9A303CC323A25E9F0072E061 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9A303CC623A25E9F0072E061 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A303CC823A25E9F0072E061 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9A303CCE23A25EE60072E061 /* TripsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripsViewModel.swift; sourceTree = "<group>"; };
+		9A303CD323A25EF40072E061 /* TripTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TripTableViewCell.xib; sourceTree = "<group>"; };
+		9A303CD423A25EF40072E061 /* TripTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TripTableViewCell.swift; sourceTree = "<group>"; };
+		9A303CD823A25EFA0072E061 /* Extensions+UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Extensions+UITableView.swift"; sourceTree = "<group>"; };
+		9A303CD923A25EFA0072E061 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		9A303CDA23A25EFA0072E061 /* NibReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibReusableView.swift; sourceTree = "<group>"; };
+		9A303CDE23A25F070072E061 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		9A303CE223A26CEA0072E061 /* TripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsViewController.swift; sourceTree = "<group>"; };
+		9A303CE323A26CEA0072E061 /* TripsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TripsViewController.xib; sourceTree = "<group>"; };
+		9A52BF9D23A66995003B74F0 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		9A52BF9F23A67072003B74F0 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		9A52BFA123A674E9003B74F0 /* Extensions+Other.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+Other.swift"; sourceTree = "<group>"; };
+		9A52BFA423A6B262003B74F0 /* CurvedSeparatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvedSeparatorView.swift; sourceTree = "<group>"; };
+		9AFDEE6923A4F93F003873A5 /* TripsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsHeaderView.swift; sourceTree = "<group>"; };
+		9AFDEE6B23A64A2F003873A5 /* Extensions+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+Date.swift"; sourceTree = "<group>"; };
+		9AFDEE7123A64B66003873A5 /* Undo ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Undo ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AFDEE7523A64B66003873A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AFDEE7B23A64C09003873A5 /* TripsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsViewModelTests.swift; sourceTree = "<group>"; };
+		9AFDEE7E23A65E48003873A5 /* TripDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailsViewController.swift; sourceTree = "<group>"; };
+		9AFDEE7F23A65E48003873A5 /* TripDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TripDetailsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		9A303CB423A25E9A0072E061 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AFDEE6E23A64B66003873A5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				9A303CB923A25E9A0072E061 /* Undo Challenge */,
+				9AFDEE7223A64B66003873A5 /* Undo ChallengeTests */,
 				9A303CB823A25E9A0072E061 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				9A303CB723A25E9A0072E061 /* Undo Challenge.app */,
+				9AFDEE7123A64B66003873A5 /* Undo ChallengeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,15 +109,95 @@
 		9A303CB923A25E9A0072E061 /* Undo Challenge */ = {
 			isa = PBXGroup;
 			children = (
-				9A303CBA23A25E9A0072E061 /* AppDelegate.swift */,
-				9A303CBC23A25E9A0072E061 /* SceneDelegate.swift */,
-				9A303CBE23A25E9A0072E061 /* ViewController.swift */,
-				9A303CC023A25E9A0072E061 /* Main.storyboard */,
+				9A52BF9C23A66972003B74F0 /* Navigation */,
+				9A303CE023A25F110072E061 /* Views */,
+				9A303CD723A25EFA0072E061 /* Traits */,
 				9A303CC323A25E9F0072E061 /* Assets.xcassets */,
+				9A303CDE23A25F070072E061 /* data.json */,
 				9A303CC523A25E9F0072E061 /* LaunchScreen.storyboard */,
 				9A303CC823A25E9F0072E061 /* Info.plist */,
 			);
 			path = "Undo Challenge";
+			sourceTree = "<group>";
+		};
+		9A303CD223A25EF40072E061 /* TripTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				9A303CD323A25EF40072E061 /* TripTableViewCell.xib */,
+				9A303CD423A25EF40072E061 /* TripTableViewCell.swift */,
+			);
+			path = TripTableViewCell;
+			sourceTree = "<group>";
+		};
+		9A303CD723A25EFA0072E061 /* Traits */ = {
+			isa = PBXGroup;
+			children = (
+				9A303CD823A25EFA0072E061 /* Extensions+UITableView.swift */,
+				9AFDEE6B23A64A2F003873A5 /* Extensions+Date.swift */,
+				9A52BFA123A674E9003B74F0 /* Extensions+Other.swift */,
+				9A303CD923A25EFA0072E061 /* Models.swift */,
+				9A303CDA23A25EFA0072E061 /* NibReusableView.swift */,
+				9A52BF9F23A67072003B74F0 /* Coordinator.swift */,
+			);
+			path = Traits;
+			sourceTree = "<group>";
+		};
+		9A303CE023A25F110072E061 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9AFDEE7D23A65E25003873A5 /* TripDetails */,
+				9A303CE123A25F2C0072E061 /* TripsList */,
+				9A303CD223A25EF40072E061 /* TripTableViewCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		9A303CE123A25F2C0072E061 /* TripsList */ = {
+			isa = PBXGroup;
+			children = (
+				9A52BFA323A6AAC1003B74F0 /* TripsHeader */,
+				9A303CE223A26CEA0072E061 /* TripsViewController.swift */,
+				9A303CE323A26CEA0072E061 /* TripsViewController.xib */,
+				9A303CCE23A25EE60072E061 /* TripsViewModel.swift */,
+			);
+			path = TripsList;
+			sourceTree = "<group>";
+		};
+		9A52BF9C23A66972003B74F0 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				9A303CBA23A25E9A0072E061 /* AppDelegate.swift */,
+				9A303CBC23A25E9A0072E061 /* SceneDelegate.swift */,
+				9A52BF9D23A66995003B74F0 /* AppCoordinator.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		9A52BFA323A6AAC1003B74F0 /* TripsHeader */ = {
+			isa = PBXGroup;
+			children = (
+				9AFDEE6923A4F93F003873A5 /* TripsHeaderView.swift */,
+				9A52BFA423A6B262003B74F0 /* CurvedSeparatorView.swift */,
+			);
+			path = TripsHeader;
+			sourceTree = "<group>";
+		};
+		9AFDEE7223A64B66003873A5 /* Undo ChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				9AFDEE7B23A64C09003873A5 /* TripsViewModelTests.swift */,
+				9AFDEE7523A64B66003873A5 /* Info.plist */,
+			);
+			path = "Undo ChallengeTests";
+			sourceTree = "<group>";
+		};
+		9AFDEE7D23A65E25003873A5 /* TripDetails */ = {
+			isa = PBXGroup;
+			children = (
+				9AFDEE7E23A65E48003873A5 /* TripDetailsViewController.swift */,
+				9AFDEE7F23A65E48003873A5 /* TripDetailsViewController.xib */,
+			);
+			path = TripDetails;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +220,24 @@
 			productReference = 9A303CB723A25E9A0072E061 /* Undo Challenge.app */;
 			productType = "com.apple.product-type.application";
 		};
+		9AFDEE7023A64B66003873A5 /* Undo ChallengeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AFDEE7823A64B66003873A5 /* Build configuration list for PBXNativeTarget "Undo ChallengeTests" */;
+			buildPhases = (
+				9AFDEE6D23A64B66003873A5 /* Sources */,
+				9AFDEE6E23A64B66003873A5 /* Frameworks */,
+				9AFDEE6F23A64B66003873A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9AFDEE7723A64B66003873A5 /* PBXTargetDependency */,
+			);
+			name = "Undo ChallengeTests";
+			productName = "Undo ChallengeTests";
+			productReference = 9AFDEE7123A64B66003873A5 /* Undo ChallengeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +250,10 @@
 				TargetAttributes = {
 					9A303CB623A25E9A0072E061 = {
 						CreatedOnToolsVersion = 11.2.1;
+					};
+					9AFDEE7023A64B66003873A5 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 9A303CB623A25E9A0072E061;
 					};
 				};
 			};
@@ -116,6 +271,7 @@
 			projectRoot = "";
 			targets = (
 				9A303CB623A25E9A0072E061 /* Undo Challenge */,
+				9AFDEE7023A64B66003873A5 /* Undo ChallengeTests */,
 			);
 		};
 /* End PBXProject section */
@@ -125,9 +281,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AFDEE8123A65E48003873A5 /* TripDetailsViewController.xib in Resources */,
+				9A303CD523A25EF40072E061 /* TripTableViewCell.xib in Resources */,
+				9A303CE523A26CEA0072E061 /* TripsViewController.xib in Resources */,
 				9A303CC723A25E9F0072E061 /* LaunchScreen.storyboard in Resources */,
 				9A303CC423A25E9F0072E061 /* Assets.xcassets in Resources */,
-				9A303CC223A25E9A0072E061 /* Main.storyboard in Resources */,
+				9A303CDF23A25F070072E061 /* data.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AFDEE6F23A64B66003873A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +304,43 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A303CBF23A25E9A0072E061 /* ViewController.swift in Sources */,
+				9A52BF9E23A66995003B74F0 /* AppCoordinator.swift in Sources */,
+				9A303CDB23A25EFA0072E061 /* Extensions+UITableView.swift in Sources */,
+				9A52BFA023A67072003B74F0 /* Coordinator.swift in Sources */,
+				9A303CD623A25EF40072E061 /* TripTableViewCell.swift in Sources */,
+				9A303CDC23A25EFA0072E061 /* Models.swift in Sources */,
+				9AFDEE6C23A64A2F003873A5 /* Extensions+Date.swift in Sources */,
+				9A303CCF23A25EE60072E061 /* TripsViewModel.swift in Sources */,
+				9A52BFA523A6B262003B74F0 /* CurvedSeparatorView.swift in Sources */,
+				9AFDEE6A23A4F93F003873A5 /* TripsHeaderView.swift in Sources */,
 				9A303CBB23A25E9A0072E061 /* AppDelegate.swift in Sources */,
+				9A303CE423A26CEA0072E061 /* TripsViewController.swift in Sources */,
+				9AFDEE8023A65E48003873A5 /* TripDetailsViewController.swift in Sources */,
+				9A303CDD23A25EFA0072E061 /* NibReusableView.swift in Sources */,
+				9A52BFA223A674E9003B74F0 /* Extensions+Other.swift in Sources */,
 				9A303CBD23A25E9A0072E061 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AFDEE6D23A64B66003873A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AFDEE7C23A64C09003873A5 /* TripsViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		9A303CC023A25E9A0072E061 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9A303CC123A25E9A0072E061 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		9AFDEE7723A64B66003873A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A303CB623A25E9A0072E061 /* Undo Challenge */;
+			targetProxy = 9AFDEE7623A64B66003873A5 /* PBXContainerItemProxy */;
 		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
 		9A303CC523A25E9F0072E061 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -216,7 +402,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +456,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -287,6 +473,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ABYEABN4N4;
 				INFOPLIST_FILE = "Undo Challenge/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +481,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.marcelmierzejewski.Undo-Challenge";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -305,6 +492,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ABYEABN4N4;
 				INFOPLIST_FILE = "Undo Challenge/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +500,49 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.marcelmierzejewski.Undo-Challenge";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		9AFDEE7923A64B66003873A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ABYEABN4N4;
+				INFOPLIST_FILE = "Undo ChallengeTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.marcelmierzejewski.Undo-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Undo Challenge.app/Undo Challenge";
+			};
+			name = Debug;
+		};
+		9AFDEE7A23A64B66003873A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ABYEABN4N4;
+				INFOPLIST_FILE = "Undo ChallengeTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.marcelmierzejewski.Undo-ChallengeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Undo Challenge.app/Undo Challenge";
 			};
 			name = Release;
 		};
@@ -333,6 +563,15 @@
 			buildConfigurations = (
 				9A303CCC23A25E9F0072E061 /* Debug */,
 				9A303CCD23A25E9F0072E061 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AFDEE7823A64B66003873A5 /* Build configuration list for PBXNativeTarget "Undo ChallengeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AFDEE7923A64B66003873A5 /* Debug */,
+				9AFDEE7A23A64B66003873A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

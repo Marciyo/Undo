@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TripsViewController" customModule="Undo_Challenge" customModuleProvider="target">
+            <connections>
+                <outlet property="headerViewHeightConstraint" destination="FqR-6c-AGC" id="RlH-ed-nbw"/>
+                <outlet property="tableView" destination="8Y6-i0-1Us" id="PeY-Dm-Jqt"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e1r-H0-7FY" customClass="TripsHeaderView" customModule="Undo_Challenge" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="44" width="414" height="350"/>
+                    <color key="backgroundColor" name="MainBackground"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="350" id="FqR-6c-AGC"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8Y6-i0-1Us">
+                    <rect key="frame" x="0.0" y="406" width="414" height="490"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" name="MainBackground"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="top" secondItem="e1r-H0-7FY" secondAttribute="top" id="0xf-Wb-haV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="8Y6-i0-1Us" secondAttribute="trailing" id="7z9-6n-Z0B"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="e1r-H0-7FY" secondAttribute="trailing" id="BbK-OX-G3s"/>
+                <constraint firstItem="8Y6-i0-1Us" firstAttribute="top" secondItem="e1r-H0-7FY" secondAttribute="bottom" constant="12" id="ErY-vO-or4"/>
+                <constraint firstAttribute="bottom" secondItem="8Y6-i0-1Us" secondAttribute="bottom" id="HzS-tM-wcO"/>
+                <constraint firstItem="e1r-H0-7FY" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="TLt-eQ-Bvx"/>
+                <constraint firstItem="8Y6-i0-1Us" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Yjt-GK-Per"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="98.4375"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="MainBackground">
+            <color red="0.61568627450980395" green="0.30196078431372547" blue="0.43137254901960786" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
