@@ -34,7 +34,6 @@ final class TripsHeaderView: UIView {
         return label
     }()
 
-
     private let tripsDescLabel: UILabel = {
         let label = UILabel()
         label.text = "trips"

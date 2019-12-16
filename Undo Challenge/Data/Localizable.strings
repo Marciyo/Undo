@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  Undo Challenge
+
+  Created by Marcel Mierzejewski on 15/12/2019.
+  Copyright © 2019 marcelmierzejewski. All rights reserved.
+*/
+
+"product_title_travel_sickness" = "Sickness 😷";
+"product_title_travel_luggage" = "Luggage 🧳";
+"product_title_travel_rental_downpayment" = "Rental Downpayment 🔪";

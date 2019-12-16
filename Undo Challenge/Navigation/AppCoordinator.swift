@@ -37,7 +37,7 @@ extension AppCoordinator: TripListDelegate {
         let tripDetailsViewModel = TripDetailsViewModel(trip: trip)
         let tripDetails = TripDetailsViewController(viewModel: tripDetailsViewModel)
         tripDetails.delegate = self
-        tripDetails.modalPresentationStyle = .pageSheet
+        tripDetails.modalPresentationStyle = .automatic
         window.rootViewController?.present(tripDetails, animated: true)
     }
 

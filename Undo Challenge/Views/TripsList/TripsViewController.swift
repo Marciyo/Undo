@@ -52,6 +52,7 @@ extension TripsViewController: UITableViewDelegate {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(TripTableViewCell.self)
+        tableView.contentInset = .init(top: 0, left: 0, bottom: 160, right: 0)
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -60,29 +61,31 @@ extension TripsViewController: UITableViewDelegate {
     }
 
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        let yPos = tableView.contentOffset.y
-        let calculatedHeaderHeight: CGFloat = headerViewHeightConstraint.constant - yPos
+        let yOffset = tableView.contentOffset.y
+        let headerHeight: CGFloat = headerViewHeightConstraint.constant - yOffset
 
-        if calculatedHeaderHeight > HeaderLayout.maxHeight {
+        if headerHeight > HeaderLayout.maxHeight {
             headerViewHeightConstraint.constant = HeaderLayout.maxHeight
-        } else if calculatedHeaderHeight < HeaderLayout.minHeight {
+        } else if headerHeight < HeaderLayout.minHeight {
             headerViewHeightConstraint.constant = HeaderLayout.minHeight
         } else {
-            headerViewHeightConstraint.constant = calculatedHeaderHeight
+            headerViewHeightConstraint.constant = headerHeight
             scrollView.contentOffset.y = 0
         }
     }
 
-//    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-//        let min = HeaderConstants.minHeight
-//        let max = HeaderConstants.maxHeight
-//        if headerViewHeightConstraint.constant > (max + min) / 2 {
-//            headerViewHeightConstraint.constant = max
-//        } else {
-//            headerViewHeightConstraint.constant = min
-//        }
-//        UIView.animate(withDuration: 3.5) {
-//            self.view.layoutIfNeeded()
-//        }
-//    }
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        let min = HeaderLayout.minHeight
+        let max = HeaderLayout.maxHeight
+        var headerHeight = headerViewHeightConstraint.constant
+
+        if headerHeight > (max + min) / 2 {
+            headerHeight = max
+        } else {
+            headerHeight = min
+        }
+        UIView.animate(withDuration: 0.5) {
+            self.view.layoutIfNeeded()
+        }
+    }
 }

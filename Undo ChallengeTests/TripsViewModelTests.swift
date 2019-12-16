@@ -13,7 +13,11 @@ class TripsViewModelTests: XCTestCase {
 
     let viewModel = TripsViewModel()
 
-    func testDurationStringCalculation() {
-
+    func testTripsViewModel() {
+        let data = viewModel.dataForCell(at: IndexPath(item: 1, section: 1))
+        XCTAssertEqual(data.country, "United States 🇺🇸")
+        XCTAssertEqual(data.duration, "2 days")
+        XCTAssertEqual(data.price, "66 kr")
+        XCTAssertEqual(data.dates, "10-05-19 - 13-05-19")
     }
 }

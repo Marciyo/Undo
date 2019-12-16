@@ -8,35 +8,32 @@
 
 import Foundation
 
-class TripDetailsViewModel {
-    private let trip: Trip
+final class TripDetailsViewModel {
 
-    lazy var coInsured: [String] = {
-        trip.coInsured.map { $0.firstNames }
-    }()
-
-    lazy var coverages: [String] = {
-        let keys = trip.coverages.map { $0.titleLocalizationKey }
-        return keys.compactMap { $0.uppercased() }
-    }()
-
-    lazy var countryName: String = {
-        "Spanien1"
-    }()
-
-    lazy var pricePerDay: String = {
-        "17 kr/day"
-    }()
-
-    lazy var totalPrice: String = {
-        "\(trip.currentTotalPrice / 100)"
-    }()
-
-    lazy var duration: String = {
-        "17 days"
-    }()
+    let coInsured: [String]
+    var coverages: [String]
+    let countryName: String
+    let firstCoverage: String?
+    let totalPrice: String
+    let duration: String
+    let pricePerDay: String
 
     init(trip: Trip) {
-        self.trip = trip
+        let durationInDays = trip.tripLogEntries.first?.daysInCountry ?? 1
+        let firstCountry = trip.tripLogEntries.first
+        let keys = trip.coverages.map { $0.titleLocalizationKey }
+
+        coInsured = trip.coInsured.map { $0.firstNames }
+        coverages = keys.compactMap { $0.lowercased().localized() }
+        countryName = firstCountry?.countryCode.countryName() ?? "Per day"
+        firstCoverage = trip.coverages.first?.titleLocalizationKey.lowercased().localized()
+        totalPrice = "\(trip.currentTotalPrice / 100)"
+        duration = durationInDays == 1 ? "1 day" : "\(durationInDays) days"
+
+        if durationInDays > 0 {
+            pricePerDay = "\(trip.currentTotalPrice / 100 / durationInDays) kr/day"
+        } else {
+            pricePerDay = "\(trip.currentTotalPrice / 100)"
+        }
     }
 }

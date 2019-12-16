@@ -25,6 +25,9 @@
 		9A52BFA223A674E9003B74F0 /* Extensions+Other.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A52BFA123A674E9003B74F0 /* Extensions+Other.swift */; };
 		9A52BFA523A6B262003B74F0 /* CurvedSeparatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A52BFA423A6B262003B74F0 /* CurvedSeparatorView.swift */; };
 		9A52BFAB23A6BC31003B74F0 /* TripDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A52BFAA23A6BC31003B74F0 /* TripDetailsViewModel.swift */; };
+		9ACAECB523A6ECB5004680C8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9ACAECB423A6ECB5004680C8 /* Localizable.strings */; };
+		9ACAECB723A79B7E004680C8 /* TripDetailsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACAECB623A79B7E004680C8 /* TripDetailsViewModelTests.swift */; };
+		9ACAECB923A79CE6004680C8 /* ExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ACAECB823A79CE6004680C8 /* ExtensionsTests.swift */; };
 		9AFDEE6A23A4F93F003873A5 /* TripsHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFDEE6923A4F93F003873A5 /* TripsHeaderView.swift */; };
 		9AFDEE6C23A64A2F003873A5 /* Extensions+Date.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFDEE6B23A64A2F003873A5 /* Extensions+Date.swift */; };
 		9AFDEE7C23A64C09003873A5 /* TripsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFDEE7B23A64C09003873A5 /* TripsViewModelTests.swift */; };
@@ -63,6 +66,9 @@
 		9A52BFA123A674E9003B74F0 /* Extensions+Other.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+Other.swift"; sourceTree = "<group>"; };
 		9A52BFA423A6B262003B74F0 /* CurvedSeparatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvedSeparatorView.swift; sourceTree = "<group>"; };
 		9A52BFAA23A6BC31003B74F0 /* TripDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailsViewModel.swift; sourceTree = "<group>"; };
+		9ACAECB423A6ECB5004680C8 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		9ACAECB623A79B7E004680C8 /* TripDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailsViewModelTests.swift; sourceTree = "<group>"; };
+		9ACAECB823A79CE6004680C8 /* ExtensionsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionsTests.swift; sourceTree = "<group>"; };
 		9AFDEE6923A4F93F003873A5 /* TripsHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsHeaderView.swift; sourceTree = "<group>"; };
 		9AFDEE6B23A64A2F003873A5 /* Extensions+Date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extensions+Date.swift"; sourceTree = "<group>"; };
 		9AFDEE7123A64B66003873A5 /* Undo ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Undo ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -111,12 +117,11 @@
 		9A303CB923A25E9A0072E061 /* Undo Challenge */ = {
 			isa = PBXGroup;
 			children = (
-				9A52BFA923A6BB5B003B74F0 /* Data */,
 				9A52BF9C23A66972003B74F0 /* Navigation */,
 				9A303CE023A25F110072E061 /* Views */,
-				9A303CD723A25EFA0072E061 /* Traits */,
+				9A52BFA923A6BB5B003B74F0 /* Data */,
+				9A303CD723A25EFA0072E061 /* Extensions and Traits */,
 				9A303CC823A25E9F0072E061 /* Info.plist */,
-				9A303CC523A25E9F0072E061 /* LaunchScreen.storyboard */,
 			);
 			path = "Undo Challenge";
 			sourceTree = "<group>";
@@ -130,7 +135,7 @@
 			path = TripTableViewCell;
 			sourceTree = "<group>";
 		};
-		9A303CD723A25EFA0072E061 /* Traits */ = {
+		9A303CD723A25EFA0072E061 /* Extensions and Traits */ = {
 			isa = PBXGroup;
 			children = (
 				9A303CD823A25EFA0072E061 /* Extensions+UITableView.swift */,
@@ -139,7 +144,7 @@
 				9A303CDA23A25EFA0072E061 /* NibReusableView.swift */,
 				9A52BF9F23A67072003B74F0 /* Coordinator.swift */,
 			);
-			path = Traits;
+			path = "Extensions and Traits";
 			sourceTree = "<group>";
 		};
 		9A303CE023A25F110072E061 /* Views */ = {
@@ -147,7 +152,6 @@
 			children = (
 				9AFDEE7D23A65E25003873A5 /* TripDetails */,
 				9A303CE123A25F2C0072E061 /* TripsList */,
-				9A303CD223A25EF40072E061 /* TripTableViewCell */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -155,6 +159,7 @@
 		9A303CE123A25F2C0072E061 /* TripsList */ = {
 			isa = PBXGroup;
 			children = (
+				9A303CD223A25EF40072E061 /* TripTableViewCell */,
 				9A52BFA323A6AAC1003B74F0 /* TripsHeader */,
 				9A303CE223A26CEA0072E061 /* TripsViewController.swift */,
 				9A303CE323A26CEA0072E061 /* TripsViewController.xib */,
@@ -185,9 +190,11 @@
 		9A52BFA923A6BB5B003B74F0 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				9A303CC523A25E9F0072E061 /* LaunchScreen.storyboard */,
 				9A303CD923A25EFA0072E061 /* Models.swift */,
 				9A303CDE23A25F070072E061 /* data.json */,
 				9A303CC323A25E9F0072E061 /* Assets.xcassets */,
+				9ACAECB423A6ECB5004680C8 /* Localizable.strings */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -196,6 +203,8 @@
 			isa = PBXGroup;
 			children = (
 				9AFDEE7B23A64C09003873A5 /* TripsViewModelTests.swift */,
+				9ACAECB623A79B7E004680C8 /* TripDetailsViewModelTests.swift */,
+				9ACAECB823A79CE6004680C8 /* ExtensionsTests.swift */,
 				9AFDEE7523A64B66003873A5 /* Info.plist */,
 			);
 			path = "Undo ChallengeTests";
@@ -296,6 +305,7 @@
 				9A303CD523A25EF40072E061 /* TripTableViewCell.xib in Resources */,
 				9A303CE523A26CEA0072E061 /* TripsViewController.xib in Resources */,
 				9A303CC723A25E9F0072E061 /* LaunchScreen.storyboard in Resources */,
+				9ACAECB523A6ECB5004680C8 /* Localizable.strings in Resources */,
 				9A303CC423A25E9F0072E061 /* Assets.xcassets in Resources */,
 				9A303CDF23A25F070072E061 /* data.json in Resources */,
 			);
@@ -338,6 +348,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ACAECB723A79B7E004680C8 /* TripDetailsViewModelTests.swift in Sources */,
+				9ACAECB923A79CE6004680C8 /* ExtensionsTests.swift in Sources */,
 				9AFDEE7C23A64C09003873A5 /* TripsViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,6 +380,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -428,6 +441,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

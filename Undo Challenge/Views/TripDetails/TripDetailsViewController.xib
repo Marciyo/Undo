@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TripDetailsViewController" customModule="Undo_Challenge" customModuleProvider="target">
             <connections>
-                <outlet property="container" destination="EZL-GK-13P" id="6PC-XL-IWZ"/>
+                <outlet property="containerView" destination="EZL-GK-13P" id="pyB-4U-uTm"/>
                 <outlet property="countryLabel" destination="Rcr-He-fea" id="9E0-NC-3ZM"/>
                 <outlet property="coveragesStack" destination="r0m-Bp-PkR" id="yV0-wl-zxy"/>
                 <outlet property="coversStack" destination="ycp-bS-u62" id="ye0-rr-aNf"/>

@@ -16,21 +16,26 @@ struct TripCellData {
 }
 
 final class TripsViewModel {
-    let trips = Bundle.main.decode([Trip].self, from: "data.json")
+    var trips: [Trip]
+
+    init() {
+        trips = Bundle.main.decode([Trip].self, from: "data.json")
+    }
 
     func dataForCell(at indexPath: IndexPath) -> TripCellData {
         let trip = trips[indexPath.item]
 
-        let countriesVisited = trip.tripLogEntries.map { $0.countryCode }
-        let firstVisitedCountry = countryName(for: countriesVisited.first!)
-        let firstCountryEmoji = countryEmoji(for: countriesVisited.first!)
-        let countryString = firstVisitedCountry! + " " + firstCountryEmoji
+        let visitedCountryCodes = trip.tripLogEntries.map { $0.countryCode }
+        let firstVisitedCountry = visitedCountryCodes.first!.countryName()
+        let firstCountryFlag = visitedCountryCodes.first!.emojiFlag()
+        let countryString = firstVisitedCountry! + " " + firstCountryFlag!
 
-        let startDate = Date.getFormattedDate(from: trip.startDate)
-        let endDate = Date.getFormattedDate(from: trip.endDate)
+        let startDate = formattedDate(from: trip.startDate)
+        let endDate = formattedDate(from: trip.endDate)
         let datesString = "\(startDate.prettyDate()) - \(endDate.prettyDate())"
 
-        let durationString = prepareDurationString(between: startDate, and: endDate)
+        let duration = trip.tripLogEntries.first?.daysInCountry ?? 0
+        let durationString = "\(duration) \(duration < 2 ? "day" : "days")"
 
         let priceString = "\(trip.currentTotalPrice / 100) kr"
 
@@ -40,41 +45,9 @@ final class TripsViewModel {
                             price: priceString)
     }
 
-    private func prepareDurationString(between date1: Date, and date2: Date) -> String {
-        let unitFlags = Set<Calendar.Component>([.day, .hour, .minute, .second])
-        let durationComponents = Calendar.current.dateComponents(unitFlags,
-                                                                 from: date1,
-                                                                 to: date2)
-
-        if let days = durationComponents.day, days != 0 {
-            return days == 1 ? "1 day" : "\(days) days"
-        } else if let hours = durationComponents.hour, hours != 0 {
-            return hours == 1 ? "1 hour" : "\(hours) hours"
-        } else if let minutes = durationComponents.minute, minutes != 0 {
-            return minutes == 1 ? "1 minute" : "\(minutes) minutes"
-        } else if let seconds = durationComponents.second, seconds != 0 {
-            return seconds == 1 ? "1 second" : "\(seconds) seconds"
-        } else {
-            return "Less than 1 second"
-        }
-    }
-
-    private func countryName(for countryCode: String) -> String? {
-        let current = Locale(identifier: "en_US")
-        return current.localizedString(forRegionCode: countryCode)
-    }
-
-    private func countryEmoji(for countryCode: String) -> String {
-        let base = UnicodeScalar("🇦").value - UnicodeScalar("A").value
-
-        var string: String = ""
-
-        countryCode.uppercased().unicodeScalars.forEach {
-            if let scalar = UnicodeScalar(base + $0.value) {
-                string.append(String(describing: scalar))
-            }
-        }
-
-        return string
+    private func formattedDate(from string: String) -> Date {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+        return dateFormatter.date(from: string)!
     }
 }

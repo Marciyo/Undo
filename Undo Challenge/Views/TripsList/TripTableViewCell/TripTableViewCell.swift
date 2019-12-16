@@ -8,17 +8,12 @@
 
 import UIKit
 
-class TripTableViewCell: UITableViewCell {
+final class TripTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var countryLabel: UILabel!
-    @IBOutlet weak var datesLabel: UILabel!
-    @IBOutlet weak var priceLabel: UILabel!
-    @IBOutlet weak var durationLabel: UILabel!
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
+    @IBOutlet private weak var countryLabel: UILabel!
+    @IBOutlet private weak var datesLabel: UILabel!
+    @IBOutlet private weak var priceLabel: UILabel!
+    @IBOutlet private weak var durationLabel: UILabel!
 
     func configure(with data: TripCellData) {
         countryLabel.text = data.country
@@ -29,5 +24,3 @@ class TripTableViewCell: UITableViewCell {
 }
 
 extension TripTableViewCell: NibReusableView { }
-
-

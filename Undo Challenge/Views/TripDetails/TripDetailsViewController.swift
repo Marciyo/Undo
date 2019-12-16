@@ -17,7 +17,7 @@ final class TripDetailsViewController: UIViewController {
         static let cutoutRelativePosition: CGFloat = 1/3
     }
 
-    @IBOutlet private weak var container: UIView!
+    @IBOutlet private weak var containerView: UIView!
     @IBOutlet private weak var totalPriceLabel: UILabel!
     @IBOutlet private weak var countryLabel: UILabel!
     @IBOutlet private weak var pricePerDayLabel: UILabel!
@@ -38,13 +38,16 @@ final class TripDetailsViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        container.layer.cornerRadius = 14
+        setupView()
+    }
+
+    private func setupView() {
+        containerView.layer.cornerRadius = 14
+        impactGenerator.prepare()
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.black.withAlphaComponent(0.3)
-        impactGenerator.prepare()
         setupData()
     }
 
@@ -54,7 +57,7 @@ final class TripDetailsViewController: UIViewController {
         countryLabel.text = viewModel.countryName
         pricePerDayLabel.text = viewModel.pricePerDay
         durationLabel.text = viewModel.duration
-        firstCoverageLabel.text = viewModel.coverages.first
+        firstCoverageLabel.text = viewModel.firstCoverage
 
         viewModel.coInsured.forEach { (firstName) in
             let coInsuredLabel = UILabel()
@@ -66,9 +69,9 @@ final class TripDetailsViewController: UIViewController {
 
         if !viewModel.coverages.isEmpty {
             viewModel.coverages.removeFirst()
-            viewModel.coverages.forEach { (firstName) in
+            viewModel.coverages.forEach { (coverageKey) in
                 let coverageLabel = UILabel()
-                coverageLabel.text = firstName
+                coverageLabel.text = coverageKey
                 coverageLabel.font = .systemFont(ofSize: 12)
                 coverageLabel.textColor = .secondaryLabel
                 coveragesStack.addArrangedSubview(coverageLabel)
@@ -77,7 +80,7 @@ final class TripDetailsViewController: UIViewController {
     }
 
     override func viewDidLayoutSubviews() {
-        applyCutoutShapeMask(for: container)
+        applyCutoutShapeMask(for: containerView)
     }
 
     @IBAction private func dismissButtonAction(_ sender: Any) {
