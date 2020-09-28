@@ -1,11 +1,9 @@
-# Thanks for challenging me!
-Welcome to **Undo Challenge App** repository!
+Welcome to **Undo App** repository!
 
-I had a lot of fun completing this challenge. In this repo, you will find working MVP of a requested app.
-Also, you will find the Algorithm challenge playground here. 
+In this repo, you will find working MVP of a requested app.
+Inside the repo you will also find algorithm that sorts and return you the trip that cost closes to let's say 50$ of all the trips you had
 
-I had very little time this weekend to complete the challenge. I would love to have more time to refactor some parts of the app.
-Especially I would love to implement RxSwift to drive the viewModels. Architecturally project is prepared to handle it.
+Inside, you will also find cool scroll view header interaction without the use of reactive approach (ScrollViewDidScroll).
 
 ### TODO:
 - Add GraphQL
